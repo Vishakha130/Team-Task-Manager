@@ -9,9 +9,9 @@
 // // const app = express();
 
 // // app.use(cors({
-origin: "https://team-task-manager-eight-delta.vercel.app",
-   credentials: true
-}));
+// origin: "https://team-task-manager-eight-delta.vercel.app",
+//    credentials: true
+// }));
 // // app.use(express.json());
 
 // // connectDB();
@@ -46,9 +46,9 @@ origin: "https://team-task-manager-eight-delta.vercel.app",
 
 // // Middleware
 // app.use(cors({
-origin: "https://team-task-manager-eight-delta.vercel.app",
-   credentials: true
-}));
+// origin: "https://team-task-manager-eight-delta.vercel.app",
+//    credentials: true
+// }));
 // app.use(express.json());
 
 // // DB Connection
