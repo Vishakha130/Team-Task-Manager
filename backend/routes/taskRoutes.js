@@ -414,7 +414,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-/* =========================
+/* ========================
    GET SINGLE TASK (FOR EDIT PAGE)
 ========================= */
 router.get("/:id", async (req, res) => {
