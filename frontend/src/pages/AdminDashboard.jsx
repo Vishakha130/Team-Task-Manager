@@ -11,7 +11,9 @@ function AdminDashboard() {
   ========================= */
   const fetchTasks = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/tasks");
+      const res = await fetch(
+        "https://team-task-manager-zyd5.onrender.com/api/tasks"
+      );
 
       const data = await res.json();
 

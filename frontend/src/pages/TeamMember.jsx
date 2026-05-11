@@ -9,7 +9,7 @@
 // // // // //   ========================= */
 // // // // //   const fetchUsers = async () => {
 // // // // //     try {
-// // // // //       const res = await fetch("http://localhost:5000/api/auth/users");
+// // // // //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/auth/users");
 // // // // //       const data = await res.json();
 
 // // // // //       setMembers(data.users || []);
@@ -23,7 +23,7 @@
 // // // // //   ========================= */
 // // // // //   const fetchTasks = async () => {
 // // // // //     try {
-// // // // //       const res = await fetch("http://localhost:5000/api/tasks");
+// // // // //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/tasks");
 // // // // //       const data = await res.json();
 
 // // // // //       setTasks(data.tasks || []);
@@ -135,7 +135,7 @@
 // // // //   ========================= */
 // // // //   const fetchUsers = async () => {
 // // // //     try {
-// // // //       const res = await fetch("http://localhost:5000/api/auth/users");
+// // // //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/auth/users");
 // // // //       const data = await res.json();
 
 // // // //       setMembers(data.users || []);
@@ -149,7 +149,7 @@
 // // // //   ========================= */
 // // // //   const fetchTasks = async () => {
 // // // //     try {
-// // // //       const res = await fetch("http://localhost:5000/api/tasks");
+// // // //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/tasks");
 // // // //       const data = await res.json();
 
 // // // //       setTasks(data.tasks || []);
@@ -266,7 +266,7 @@
 // // //   ========================= */
 // // //   const fetchUsers = async () => {
 // // //     try {
-// // //       const res = await fetch("http://localhost:5000/api/auth/users");
+// // //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/auth/users");
 // // //       const data = await res.json();
 
 // // //       setMembers(data.users || []);
@@ -280,7 +280,7 @@
 // // //   ========================= */
 // // //   const fetchTasks = async () => {
 // // //     try {
-// // //       const res = await fetch("http://localhost:5000/api/tasks");
+// // //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/tasks");
 // // //       const data = await res.json();
 
 // // //       setTasks(data.tasks || []);
@@ -395,7 +395,7 @@
 // //   ========================= */
 // //   const fetchUsers = async () => {
 // //     try {
-// //       const res = await fetch("http://localhost:5000/api/auth/users");
+// //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/auth/users");
 // //       const data = await res.json();
 
 // //       setMembers(data.users || []);
@@ -409,7 +409,7 @@
 // //   ========================= */
 // //   const fetchTasks = async () => {
 // //     try {
-// //       const res = await fetch("http://localhost:5000/api/tasks");
+// //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/tasks");
 // //       const data = await res.json();
 
 // //       setTasks(data.tasks || []);
@@ -519,7 +519,7 @@
 //   ========================= */
 //   const fetchUsers = async () => {
 //     try {
-//       const res = await fetch("http://localhost:5000/api/auth/users");
+//       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/auth/users");
 //       const data = await res.json();
 
 //       setMembers(data.users || []);
@@ -534,7 +534,7 @@
 //   ========================= */
 //   const fetchTasks = async () => {
 //     try {
-//       const res = await fetch("http://localhost:5000/api/tasks");
+//       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/tasks");
 //       const data = await res.json();
 
 //       setTasks(data.tasks || []);
@@ -647,7 +647,9 @@ function TeamMembers() {
   ========================= */
   const fetchUsers = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/auth/users");
+      const res = await fetch(
+        "https://team-task-manager-zyd5.onrender.com/api/auth/users"
+      );
       const data = await res.json();
 
       setMembers(data.users || []);
@@ -662,7 +664,9 @@ function TeamMembers() {
   ========================= */
   const fetchTasks = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/tasks");
+      const res = await fetch(
+        "https://team-task-manager-zyd5.onrender.com/api/tasks"
+      );
       const data = await res.json();
 
       setTasks(data.tasks || []);

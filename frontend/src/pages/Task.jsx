@@ -7,7 +7,9 @@ function Tasks() {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/tasks");
+      const res = await fetch(
+        "https://team-task-manager-zyd5.onrender.com/api/tasks"
+      );
       const data = await res.json();
 
       console.log("API RESPONSE:", data);
@@ -25,9 +27,12 @@ function Tasks() {
 
   const deleteTask = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/tasks/${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `https://team-task-manager-zyd5.onrender.com/api/tasks/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       if (res.ok) {
         alert("Task deleted");

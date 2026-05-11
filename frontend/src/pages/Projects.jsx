@@ -150,7 +150,7 @@
 // //   ========================= */
 // //   const fetchProjects = async () => {
 // //     try {
-// //       const res = await fetch("http://localhost:5000/api/projects");
+// //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/projects");
 // //       const data = await res.json();
 
 // //       setProjects(data.projects || []);
@@ -172,7 +172,7 @@
 // //     if (!title.trim()) return;
 
 // //     try {
-// //       const res = await fetch("http://localhost:5000/api/projects/create", {
+// //       const res = await fetch("https://team-task-manager-zyd5.onrender.com/api/projects/create", {
 // //         method: "POST",
 // //         headers: {
 // //           "Content-Type": "application/json",

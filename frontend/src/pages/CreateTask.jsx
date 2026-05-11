@@ -30,14 +30,17 @@ function CreateTask() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/tasks/create", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const res = await fetch(
+        "https://team-task-manager-zyd5.onrender.com/api/tasks/create",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
 
-        body: JSON.stringify(formData),
-      });
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await res.json();
 

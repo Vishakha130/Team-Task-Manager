@@ -16,7 +16,7 @@
 //       }
 
 //       const res = await fetch(
-//         `http://localhost:5000/api/tasks?email=${user.email}`
+//         `https://team-task-manager-zyd5.onrender.com/api/tasks?email=${user.email}`
 //       );
 
 //       const data = await res.json();
@@ -40,7 +40,7 @@
 //   ========================= */
 //   const updateStatus = async (id, status) => {
 //     try {
-//       const res = await fetch(`http://localhost:5000/api/tasks/${id}`, {
+//       const res = await fetch(`https://team-task-manager-zyd5.onrender.com/api/tasks/${id}`, {
 //         method: "PUT",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -162,7 +162,7 @@ function MemberDashboard() {
       if (!user?.email) return;
 
       const res = await fetch(
-        `http://localhost:5000/api/tasks?email=${user.email}`
+        `https://team-task-manager-zyd5.onrender.com/api/tasks?email=${user.email}`
       );
 
       const data = await res.json();
@@ -182,13 +182,16 @@ function MemberDashboard() {
   /* UPDATE STATUS */
   const updateStatus = async (id, status) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/tasks/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ status }),
-      });
+      const res = await fetch(
+        `https://team-task-manager-zyd5.onrender.com/api/tasks/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ status }),
+        }
+      );
 
       const data = await res.json();
 
